@@ -3,9 +3,51 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import { motion } from "framer-motion";
-import Link from "next/link";
 import ImageIcon from './ImageIcon';
+
+const navLinks = [
+  {
+    src: "/images/icons/react-icon.png",
+    alt: 'react-icon',
+    id: 1,
+  },
+  {
+    src: "/images/icons/nextjs-icon.png",
+    alt: 'nextjs-icon',
+    id: 2,
+  },
+  {
+    src: "/images/icons/nodejs-icon.png",
+    alt: 'nodejs-icon',
+    id: 3,
+  },
+  {
+    src: "/images/icons/javascript-icon.png",
+    alt: 'javascript-icon',
+    id: 4,
+  },
+  {
+    src: "/images/icons/typescript-icon.png",
+    alt: 'typescript-icon',
+    id: 5,
+  },
+  {
+    src: "/images/icons/tailwindcss-icon.png",
+    alt: 'tailwindcss-icon',
+    id: 6,
+  },
+  {
+    src: "/images/icons/unity-icon.png",
+    alt: 'unity-icon',
+    id: 7,
+  },
+  {
+    src: "/images/icons/unreal-icon.png",
+    alt: 'unreal-icon',
+    id: 8,
+  },
+]
+
 
 const HeroSection = () => {
   return (
@@ -37,22 +79,22 @@ const HeroSection = () => {
             React.Js • Next.Js • Node.Js • JavaScript • TypeScript • Unity • Unreal Engine
           </p>
           <div className='flex gap-3 pb-6'>
-            <ImageIcon src='/images/react-icon.png' alt='react-icon'/>
-            <ImageIcon src='/images/nextjs-icon.png' alt='nextjs-icon'/>
-            <ImageIcon src='/images/nodejs-icon.png' alt='nodejs-icon'/>
-            <ImageIcon src='/images/javascript-icon.png' alt='javascript-icon'/>
-            <ImageIcon src='/images/typescript-icon.png' alt='typescript-icon'/>
-            <ImageIcon src='/images/tailwindcss-icon.png' alt='tailwindcss-icon'/>
-            <ImageIcon src='/images/unity-icon.png' alt='unity-icon'/>
-            <ImageIcon src='/images/unreal-icon.png' alt='unreal-icon'/>
+            {navLinks.map((link) => (
+              <ImageIcon key={link.id} src={link.src} alt={link.alt as string} size={25}/>
+            ))}
           </div>
           <div>
-            <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-purple-800 hover:bg-slate-200 text-white'>
-              Hire Me
-            </button>
-            <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-purple-800 hover:bg-slate-800 text-white mt-3'>
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span>
-            </button>
+            <a href={"https://wa.me//558196181904"} target="_blank">
+              <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-purple-800 hover:bg-slate-200 text-white'>
+                Hire Me
+              </button>
+            </a>
+            <a href={"/curriculum/Curriculum.pdf"} download>
+              <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-purple-800 hover:bg-slate-800 text-white mt-3'>
+                <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span>
+              </button>
+            </a>
+            
           </div>
         </div>
         

@@ -1,57 +1,49 @@
 "use client";
 import Link from 'next/link'
 import React, { useState } from 'react'
-import NavLink from './NavLink'
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import MenuOverlay from './MenuOverlay';
+import ImageIcon from './ImageIcon';
+
 const navLinks = [
   {
-    title: "About",
-    path: "#about",
+    src: "/images/contact-icons/whatsapp-icon.png",
+    path: "https://wa.me//558196181904",
+    alt: 'whatsapp-icon',
+    id: 1,
   },
   {
-    title: "Projects",
-    path: "#projects",
+    src: "/images/contact-icons/linkedin-icon.png",
+    path: "https://www.linkedin.com/in/wil-developer/",
+    alt: 'whatsapp-icon',
+    id: 2,
   },
   {
-    title: "Contact",
-    path: "#contact",
+    src: "/images/contact-icons/github-icon.png",
+    path: "https://github.com/William-Dantas-Dev",
+    alt: 'github-icon',
+    id: 3,
   },
 ]
 
 
 function Navbar() {
-  const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <nav className='fixed top-0 left-0 right-0 z-10 bg-opacity-90 bg-[#121212]'>
       <div className='flex flex-wrap items-center justify-between mx-auto px-20 py-8'>
         <Link href={"/"} className='text-2xl md:text-5xl text-white font-semibold'>
           {/* William */}
         </Link>
-        <div className='mobile-menu block md:hidden'>
-        {
-          navbarOpen ? (
-            <button onClick={() => setNavbarOpen(false)} className='flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white'>
-              <XMarkIcon className='h-5 w-5'/>
-            </button>
-          ) : (
-            <button onClick={() => setNavbarOpen(true)} className='flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white'>
-              <Bars3Icon className='h-5 w-5'/>
-            </button>
-          )
-        }
-        </div>
-        <div className='menu hidden md:block md:w-auto' id='navbar'>
-          <ul className='flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0'>
-            {navLinks.map((link, index) => (
-              <li key={index}>
-                <NavLink href={link.path} title={link.title} />
+        <div className='menu w-auto' id='navbar'>
+          <ul className='flex flex-row space-x-4'>
+            {navLinks.map((link) => (
+              <li key={link.id} className='content-center'>
+                <a href={link.path} target="_blank" rel="noopener noreferrer">
+                  <ImageIcon src={link.src} alt={link.alt as string} size={40}/>
+                </a>
               </li>
             ))}
           </ul>
         </div>
       </div>
-      {navbarOpen && <MenuOverlay links={navLinks} />}
     </nav>
   )
 }

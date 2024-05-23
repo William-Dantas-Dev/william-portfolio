@@ -13,6 +13,24 @@ const projectsData = [
     gitUrl: "https://github.com/William-Dantas-Dev/emporium-of-verra",
     previewUrl: "https://emporium-of-verra.vercel.app",
   },
+  {
+    id: 1,
+    title: "Passcode",
+    description: "The site is a demo of how to password protect pages in your application using a passcode. The password is '123456'. When you visit the site, you will be prompted to enter the password. If you enter the correct password, you will be able to access the site. Otherwise, you will be denied access.",
+    image: "/images/projects/2.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/William-Dantas-Dev/PasscodeNextJs",
+    previewUrl: "https://passcode-next-js.vercel.app",
+  },
+  {
+    id: 1,
+    title: "Hotel Reservation",
+    description: "This is an application made in next.js for study. a hotel booking landing page",
+    image: "/images/projects/3.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/William-Dantas-Dev/HotelNextJs",
+    previewUrl: "https://hotel-next-js.vercel.app",
+  },
 ];
 
 const ProjectSection = () => {
