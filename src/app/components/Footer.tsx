@@ -15,9 +15,9 @@ const Footer = ({}: {
           <a href="#" className="hover:underline"> William Santos Dantas. </a>All Rights Reserved.
         </span>
         <ul className="flex flex-wrap items-center text-sm text-gray-400 hover:text-gray-500">
-          {Menus.map((menu) => (
+          {/* {Menus.map((menu) => (
             <FooterItem key={menu.id} value={menu.title}/>
-          ))}
+          ))} */}
         </ul>
       </footer>
     </>
