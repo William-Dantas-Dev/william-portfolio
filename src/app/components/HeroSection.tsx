@@ -31,10 +31,10 @@ const HeroSection = () => {
             />
           </h1>
           <p className='text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-2'>
-            Next Js | Front End Developer
+            Next Js | Front End Developer | Game Developer
           </p>
           <p className='text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6'>
-            React.Js • Next.Js • Node.Js • JavaScript • TypeScript
+            React.Js • Next.Js • Node.Js • JavaScript • TypeScript • Unity • Unreal Engine
           </p>
           <div className='flex gap-3 pb-6'>
             <ImageIcon src='/images/react-icon.png' alt='react-icon'/>
@@ -43,6 +43,8 @@ const HeroSection = () => {
             <ImageIcon src='/images/javascript-icon.png' alt='javascript-icon'/>
             <ImageIcon src='/images/typescript-icon.png' alt='typescript-icon'/>
             <ImageIcon src='/images/tailwindcss-icon.png' alt='tailwindcss-icon'/>
+            <ImageIcon src='/images/unity-icon.png' alt='unity-icon'/>
+            <ImageIcon src='/images/unreal-icon.png' alt='unreal-icon'/>
           </div>
           <div>
             <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-purple-800 hover:bg-slate-200 text-white'>
