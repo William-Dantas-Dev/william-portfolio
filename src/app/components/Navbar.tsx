@@ -22,6 +22,12 @@ const navLinks = [
     alt: 'github-icon',
     id: 3,
   },
+  {
+    src: "/images/contact-icons/discord-icon.png",
+    path: "https://discordapp.com/channels/@me/_shiroegamingdev",
+    alt: 'discord-icon',
+    id: 4,
+  },
 ]
 
 
