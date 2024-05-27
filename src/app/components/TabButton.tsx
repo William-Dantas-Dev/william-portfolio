@@ -1,4 +1,4 @@
-import React, { MouseEvent, MouseEventHandler } from 'react'
+import React from 'react'
 
 const TabButton = ({ active, selectTab, title  } : {
   active: boolean,

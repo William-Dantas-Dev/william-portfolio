@@ -34,9 +34,9 @@ const navLinks = [
 function Navbar() {
   return (
     <nav className='fixed top-0 left-0 right-0 z-10 bg-opacity-90 bg-[#121212]'>
-      <div className='flex flex-wrap items-center justify-between mx-auto px-20 py-8'>
-        <Link href={"/"} className='text-2xl md:text-5xl text-white font-semibold'>
-          {/* William */}
+      <div className='flex flex-wrap items-center justify-center md:justify-end mx-auto px-10 py-8'>
+        <Link href={"/"} className='text-2xl md:text-5xl text-white font-semibold hidden'>
+          William
         </Link>
         <div className='menu w-auto' id='navbar'>
           <ul className='flex flex-row space-x-4'>
