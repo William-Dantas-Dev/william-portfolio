@@ -6,12 +6,12 @@ import ProjectTag from './ProjectTag';
 const projectsData = [
   {
     id: 1,
-    title: "Emporium Of Verra",
-    description: "Emporium of Verra is a project that aims to help players sell items within the game Ashes of Creation. It will also feature other helpful tools, such as a skill calculator and an interactive map.",
+    title: "Photos Gallery",
+    description: "This project is a photo gallery developed with Next.js. It allows users to browse through a collection of images quickly and intuitively, providing a pleasant and responsive visual experience.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/William-Dantas-Dev/emporium-of-verra",
-    previewUrl: "https://emporium-of-verra.vercel.app",
+    gitUrl: "https://github.com/William-Dantas-Dev/PhotosGallery",
+    previewUrl: "https://photos-gallery-weld.vercel.app/",
   },
   {
     id: 1,
@@ -30,6 +30,15 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/William-Dantas-Dev/HotelNextJs",
     previewUrl: "https://hotel-next-js.vercel.app",
+  },
+  {
+    id: 4,
+    title: "Car Hub",
+    description: "This project is a car showcase developed with Next.js. It allows users to explore a collection of cars with detailed information, providing an immersive and responsive user experience.",
+    image: "/images/projects/4.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://car-showcase-mu-two.vercel.app/",
+    previewUrl: "https://github.com/William-Dantas-Dev/car_showcase",
   },
 ];
 
