@@ -40,6 +40,15 @@ const projectsData = [
     gitUrl: "https://car-showcase-mu-two.vercel.app/",
     previewUrl: "https://github.com/William-Dantas-Dev/car_showcase",
   },
+  {
+    id: 5,
+    title: "Dating Request",
+    description: "This is a simple and fun project, developed with Next.js and hosted on Vercel. The idea is to allow users to send dating requests in a light and relaxed manner.",
+    image: "/images/projects/5.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/William-Dantas-Dev/dating-request-nextjs",
+    previewUrl: "https://dating-request-mu.vercel.app",
+  },
 ];
 
 const ProjectSection = () => {
