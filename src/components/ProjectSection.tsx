@@ -37,8 +37,8 @@ const projectsData = [
     description: "This project is a car showcase developed with Next.js. It allows users to explore a collection of cars with detailed information, providing an immersive and responsive user experience.",
     image: "/images/projects/4.png",
     tag: ["All", "Web"],
-    gitUrl: "https://car-showcase-mu-two.vercel.app/",
-    previewUrl: "https://github.com/William-Dantas-Dev/car_showcase",
+    gitUrl: "https://github.com/William-Dantas-Dev/car_showcase",
+    previewUrl: "https://car-showcase-mu-two.vercel.app/",
   },
   {
     id: 5,
@@ -73,8 +73,8 @@ const projectsData = [
     description: "Game made with Unreal Engine featuring a procedurally generated maze.",
     image: "/images/projects/8.png",
     tag: ["All", "Games"],
-    gitUrl: "https://william-shiroe-dev.itch.io/maze",
-    previewUrl: "https://github.com/William-Dantas-Dev/MazeGame",
+    gitUrl: "https://github.com/William-Dantas-Dev/MazeGame",
+    previewUrl: "https://william-shiroe-dev.itch.io/maze",
   },
   {
     id: 9,
