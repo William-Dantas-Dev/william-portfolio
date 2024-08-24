@@ -6,6 +6,15 @@ import ProjectTag from './ProjectTag';
 const projectsData = [
   {
     id: 1,
+    title: "FoodHive",
+    description: "FoodHive is a fast and intuitive website that offers a variety of delicious meals, from burgers to desserts, with unmissable offers. Easily navigate the menu, discover promotions and place your order in just a few clicks, all in a modern, responsive design.",
+    image: "/images/projects/FoodHive.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/William-Dantas-Dev/fastfood-nextjs",
+    previewUrl: "https://fastfood-nextjs-one.vercel.app",
+  },
+  {
+    id: 2,
     title: "Photos Gallery",
     description: "This project is a photo gallery developed with Next.js. It allows users to browse through a collection of images quickly and intuitively, providing a pleasant and responsive visual experience.",
     image: "/images/projects/1.png",
@@ -14,7 +23,7 @@ const projectsData = [
     previewUrl: "https://photos-gallery-weld.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Passcode",
     description: "The site is a demo of how to password protect pages in your application using a passcode. The password is '123456'. When you visit the site, you will be prompted to enter the password. If you enter the correct password, you will be able to access the site. Otherwise, you will be denied access.",
     image: "/images/projects/2.png",
@@ -23,7 +32,7 @@ const projectsData = [
     previewUrl: "https://passcode-next-js.vercel.app",
   },
   {
-    id: 3,
+    id: 4,
     title: "Hotel Reservation",
     description: "This is an application made in next.js for study. a hotel booking landing page",
     image: "/images/projects/3.png",
@@ -32,7 +41,7 @@ const projectsData = [
     previewUrl: "https://hotel-next-js.vercel.app",
   },
   {
-    id: 4,
+    id: 5,
     title: "Car Hub",
     description: "This project is a car showcase developed with Next.js. It allows users to explore a collection of cars with detailed information, providing an immersive and responsive user experience.",
     image: "/images/projects/4.png",
@@ -41,7 +50,7 @@ const projectsData = [
     previewUrl: "https://car-showcase-mu-two.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Dating Request",
     description: "This is a simple and fun project, developed with Next.js and hosted on Vercel. The idea is to allow users to send dating requests in a light and relaxed manner.",
     image: "/images/projects/5.png",
@@ -50,7 +59,7 @@ const projectsData = [
     previewUrl: "https://dating-request-mu.vercel.app",
   },
   {
-    id: 6,
+    id: 7,
     title: "Parkour Game",
     description: "Simple Parkour System make with Unity",
     image: "/images/projects/6.png",
@@ -59,7 +68,7 @@ const projectsData = [
     previewUrl: "https://william-shiroe-dev.itch.io/parkour-game",
   },
   {
-    id: 7,
+    id: 8,
     title: "Roll A Ball",
     description: "Simple game made with Unity with the objective to collect all cubes.",
     image: "/images/projects/7.png",
@@ -68,7 +77,7 @@ const projectsData = [
     previewUrl: "https://william-shiroe-dev.itch.io/roll-a-ball",
   },
   {
-    id: 8,
+    id: 9,
     title: "Procedural Maze Game",
     description: "Game made with Unreal Engine featuring a procedurally generated maze.",
     image: "/images/projects/8.png",
@@ -77,7 +86,7 @@ const projectsData = [
     previewUrl: "https://william-shiroe-dev.itch.io/maze",
   },
   {
-    id: 9,
+    id: 10,
     title: "Zombie Survival",
     description: "Project Zombie is a simple survival game made with Unreal Engine. Fight off endless waves of zombies and see how long you can last!",
     image: "/images/projects/9.png",
@@ -86,7 +95,7 @@ const projectsData = [
     previewUrl: "https://william-shiroe-dev.itch.io/project-zombie",
   },
   {
-    id: 10,
+    id: 11,
     title: "Stacks Blocks",
     description: "Stack Blocks is an endless stacking game where you try to stack as many blocks as possible without letting them fall. How high can you go? Challenge yourself and see how many blocks you can stack!",
     image: "/images/projects/10.png",
